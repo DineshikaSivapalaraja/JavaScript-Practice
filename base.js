@@ -55,7 +55,8 @@ var d= ++c
 console.log(c)
 console.log(d)
 
-//data types
+//data types--1)primitive(String,boolean,number,null,undefined)
+         //--2) Non primitive(Object,Array)
 var g = 20
 console.log(typeof(g))
 
