@@ -60,12 +60,14 @@ console.log(d)
 var g = 20
 console.log(typeof(g))
 
-var name = "Din"
-console.log(typeof(name))
+var Name = "Din"
+console.log(typeof(Name))
 
 var x = true
 console.log(typeof(x))
 
 var y = null  //--> object
+console.log(typeof(y))
 
 var z  //-->undefined
+console.log(typeof(z))
