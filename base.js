@@ -73,7 +73,6 @@ console.log(typeof(y))
 var z  //-->undefined
 console.log(typeof(z))
 
-
-//prompt -> to get an input
+// prompt -> to get an input
 // var f = prompt()
-// console.log(f)  --> can't use in VS code because it is related to browser
+// console.log(f) // --> can't use in VS code because it is related to browser
