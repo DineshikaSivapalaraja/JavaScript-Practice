@@ -1,10 +1,11 @@
 console.log("Hello Dineshi!")
 
-a=10
+a=10  //---> not good to  declare variable without declaration 
 b=20
 console.log(a)
 console.log(b)
 console.log(a+b)
+var w=10;//------> can use ; but not must 
 
 //variable declaration--->var(global scope),let(local scope),const(once we assign, can't change)
 
@@ -71,3 +72,8 @@ console.log(typeof(y))
 
 var z  //-->undefined
 console.log(typeof(z))
+
+
+//prompt -> to get an input
+// var f = prompt()
+// console.log(f)  --> can't use in VS code because it is related to browser
