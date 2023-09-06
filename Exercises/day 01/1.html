@@ -1,0 +1,31 @@
+<!-- Create an input tag with the id "inputBox."
+- Create an h1 tag with the id "result."
+- Your task is to:
+- Retrieve the value from the input box.
+- Insert this value into the h1 tag using the "textcontent" property.
+- Use an "onkeyup" event handler to accomplish this. -->
+
+<html>
+    <head>
+        <style>
+            body{
+                background-color: azure;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Output is: </p>
+        <input id="inputBox" onkeyup="enter()"></input>
+        <h1 id="result">Result</h1>
+
+        <script>
+            function enter() {
+            var input = document.getElementById("inputBox")
+            var h =  document.getElementById("result")
+
+            h.textContent = input.value 
+            }
+        </script>
+    </body>
+</html>
