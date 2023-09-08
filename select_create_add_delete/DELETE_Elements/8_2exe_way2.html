@@ -1,0 +1,18 @@
+<!-- have list of text and only delete clicked text
+
+using event -- only one function for all clicking/event-->
+
+<h1 onclick="deleteItem(event)">Hello One</h1>
+<h1 onclick="deleteItem(event)">Hello Two</h1>
+<h1 onclick="deleteItem(event)">Hello Three</h1>
+<h1 onclick="deleteItem(event)">Hello Four</h1>
+<h1 onclick="deleteItem(event)">Hello Five</h1>
+<h1 onclick="deleteItem(event)">Hello Six</h1>
+<h1 onclick="deleteItem(event)">Hello Seven</h1>
+<h1 onclick="deleteItem(event)">Hello Eight</h1>
+
+<script>
+    function deleteItem(event){
+        event.target.remove()
+    }
+</script>

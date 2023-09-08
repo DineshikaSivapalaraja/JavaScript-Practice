@@ -1,0 +1,25 @@
+<!-- exercise 1 -->
+
+<!-- • Create h1 tag with ID “title” and Set its value to Hello World
+• Select the h1 tag using document.getElementById() and change “Hello world” to “Bye World” -->
+
+<style>
+    h1{
+        color: yellow;
+    }   
+</style>
+
+<h1 id="title">Hello World</h1>
+
+<script>
+    var  h = document.getElementById("title")
+    // var newH = string.replace(h.textContent,"Bye World")
+    console.log(h.textContent)
+    h.textContent = "Bye World"   //---------------this will change in browser not console
+    console.log(h.textContent) //this produce output in console
+
+    //console.log(newH)
+</script>
+
+
+
