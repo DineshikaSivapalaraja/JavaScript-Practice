@@ -1,0 +1,46 @@
+<p id="para">Hello</p>
+<script>
+    var para = document.getElementById("para")
+    para.append("Hi")
+</script>
+
+<!-- Add list -->
+
+<ul id="container">
+    <li>Hello Friends</li>
+</ul>
+
+<button onclick="addlist()">Add List</button>
+
+<script>
+    var container = document.getElementById("container")
+    function addlist() {
+        container.append("Hello")
+    }
+    // output HElloHelloHello
+</script>
+
+<!-- //output as list one after another -->
+
+<ul id="contain">
+    <li>Hello Friends</li>
+</ul>
+
+<button onclick="addList()">Add-List</button>
+
+<script>
+    var container = document.getElementById("contain")
+    function addList() {
+        //creating an element - li
+        var listitem = document.createElement("li")
+        //adding text to li tag
+        listitem.textContent="Hello"
+        //appending to the container
+        container.append(listitem)
+    }
+    // output    Hello
+    //           Hello
+    //           Hello
+    //           Hello
+</script>
+
