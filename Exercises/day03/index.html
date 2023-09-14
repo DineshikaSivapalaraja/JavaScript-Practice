@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Day 03</title>
+    </head>
+    <body>
+        <h1 id="head"></h1>
+        <button onclick="clicked(event)">John</button>
+        <button onclick="clicked(event)">Hari</button>
+        <button onclick="clicked(event)">Praveen</button>
+
+        <script>
+            var h1 = document.getElementById("head")
+            function clicked(event) {
+                h1.textContent = event.target.textContent
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!-- Method 1 -- change button color -->
+<p id="para">Before Click</p>
+<button onclick="changeColor()" id="btn">Change Color</button>
+
+<script>
+    function changeColor() {
+        var p = document.getElementById("para")
+        p.textContent = "After Click"
+
+        var btn = document.getElementById("btn")
+        btn.style.backgroundColor = "red"
+        // button.style.background-color = "red"
+    }
+</script>
+
+
+<!-- Method 2 --using event object change button color -->
+<p id="p">Before Click</p>
+<button onclick="clicked(event)">Change Color</button>
+
+<script>
+    function clicked(event) {
+        var p = document.getElementById("p")
+        p.textContent = "After Click"
+
+        event.target.style.backgroundColor = "red"
+    }
+</script>
