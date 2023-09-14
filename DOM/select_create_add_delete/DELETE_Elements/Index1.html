@@ -1,0 +1,52 @@
+<!-- delete using various functions -->
+
+<!-- <h1 id="para" onclick="clicked()">Hello</h1>
+<h1 id="p2" onclick="clicked1()">Hello ONE</h1>
+<h1 id="p3" onclick="clicked2()">Hello Two</h1>
+<h1 id="p4" onclick="clicked3()">Hello Three</h1>
+<h1 id="p5" onclick="clicked4()">Hello Four</h1>
+
+<script>
+    var p = document.getElementById("para")
+    var p2 = document.getElementById("p2")
+    var p3 = document.getElementById("p3")
+    var p4 = document.getElementById("p4")
+    var p5 = document.getElementById("p5")
+
+    function clicked() {
+        para.remove()
+    }
+
+    function clicked1() {
+        p2.remove()
+    }
+
+    function clicked2() {
+        p3.remove()
+    }
+
+    function clicked3() {
+        p4.remove()
+    }
+
+    function clicked4() {
+        p5.remove()
+    }
+
+</script> -->
+
+<!-- delete element using event -->
+
+<h1 onclick="clicked(event)">Hello</h1>
+<h1 onclick="clicked(event)">One</h1>
+<h1 onclick="clicked(event)">Two</h1>
+<h1 onclick="clicked(event)">Three</h1>
+<h1 onclick="clicked(event)">Four</h1>
+
+<script>
+    function clicked(event) {
+        // console.log(event.target)  //output---> <h1 onclick="clicked(event)">Hello</h1>
+        event.target.remove()
+
+    }
+</script>

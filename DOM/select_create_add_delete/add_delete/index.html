@@ -1,0 +1,23 @@
+<input id="inputBox">
+<button onclick="Add()">Add</button>
+<ul id="box">
+    <li>OUTPUTS</li>
+</ul>
+
+
+<script>
+    var input = document.getElementById("inputBox")
+    var box = document.getElementById("box")
+
+    function Add(){
+
+        var listItem = document.createElement("li")
+        listItem.textContent = inputBox.value
+
+        // box.textContent = listItem.textContent
+        box.append(listItem)
+
+
+    }
+</script>
+

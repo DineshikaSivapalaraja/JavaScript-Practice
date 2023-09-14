@@ -1,0 +1,22 @@
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        /* display: none; */
+    }
+
+    .hide {
+        display: none;
+    }
+</style>
+
+<div class="box" id="popup"> </div>
+<button onclick="controlPopup()">Button</button>
+<script>
+    var popup = document.getElementById("popup")
+    function controlPopup() {
+        popup.classList.add("hide")
+        // popup.classList.remove("hide")
+    }
+</script>

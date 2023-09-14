@@ -1,0 +1,37 @@
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(52, 52, 182);
+    }
+    .add{
+        background-color: red;
+    }
+    /* .remove{
+        background-color: black;
+    } */
+
+</style>
+
+<div class="box" id="b">
+
+</div>
+
+<button onclick="addClr()">Add</button>
+<button onclick="removeClr()">Remove</button>
+
+<script>
+    var Box = document.getElementById("b")
+
+    function addClr() {
+        Box.classList.add("add")
+
+    }
+
+    function removeClr() {
+        // Box.classList.add("remove")
+        Box.classList.remove("add")
+        
+    }
+
+</script>

@@ -1,0 +1,28 @@
+<h1>To - do - list</h1>
+
+<input id="inputBox">
+<button onclick="add()">Add</button>
+
+<ul id="box">
+    <li>
+        hello<button onclick="deleteItem(event)">Delete</button>
+    </li>
+</ul>
+
+<script>
+    var box=document.getElementById("inputBox")
+    var box=document.getElementById("box")
+    function add() {
+        var list = document.createElement("li")
+        list.innerHTML = inputBox.value+"<button onclick=\"deleteItem(event)\">Delete</button>"
+
+        box.append(list)
+
+    }
+
+    function deleteItem(event) {
+        event.target.parentElement.remove()
+
+        
+    }
+</script>
