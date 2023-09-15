@@ -1,0 +1,30 @@
+<!-- Task with event handler -->
+<input id = "box" onkeyup="change()">
+<p id="para"></p>
+
+<script>
+    function change() {
+        var p = document.getElementById("para")
+        var box = document.getElementById("box")
+
+        p.textContent = box.value
+
+    }
+</script>
+
+<!-- Task with eventListener -->
+
+<input id="Box">
+<h1 id="head"></h1>
+
+<script>
+    var Box= document.getElementById("Box")
+    var h = document.getElementById("head")
+
+    Box.addEventListener("keyup",function(){
+        h.textContent = Box.value
+    })
+
+
+</script>
+

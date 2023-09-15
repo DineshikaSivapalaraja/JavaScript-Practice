@@ -1,0 +1,26 @@
+<!-- using event handler -->
+<!-- <h1 id="heading">Hello friends!</h1>
+<button  onclick="change()">Change</button>
+
+<script>
+    function change() {
+        var h = document.getElementById("heading")
+        h.textContent = "bye"
+    }
+</script> -->
+
+<!-- Using eventListener -->
+<h1 id="h">Hello</h1>
+<button id="btn">Click</button>
+
+<script>
+    var h = document.getElementById("h")
+    var btn = document.getElementById("btn")
+    btn.addEventListener("click",  function(){
+        // alert("Welcome")
+        // var h = document.getElementById("h")
+        h.textContent = "Bye"
+    }
+    )      
+    
+</script>
