@@ -28,3 +28,37 @@
 
 </script>
 
+<!-- Using event object -->
+
+<input id="inputBox" onkeyup="update(event)">
+<h1 id="h"></h1>
+
+<script>
+    var Box= document.getElementById("inputBox")
+    var head = document.getElementById("h")
+
+    function update(event) {
+        head.textContent = event.target.value
+    }
+
+
+</script>
+
+<!-- Using event object with event Listener -->
+
+<input id="in">
+<h1 id="hd"></h1>
+
+<script>
+    var h = document.getElementById("hd")
+    var input = document.getElementById("in")
+
+    // input.addEventListener("keyup",function(event){
+    //     hd.textContent = event.target.value
+    // })
+
+    input.addEventListener("keyup",function(){
+        hd.textContent  = event.target.value
+    })
+
+</script>
