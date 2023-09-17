@@ -1,0 +1,27 @@
+<h1>HELLO DIN!</h1>
+<p id="p1" class="p1">How are you?</p>
+<p id="p2">Good Bye</p>
+<button onclick="change()">CHANGE</button>
+
+<script>
+    function change() {
+        var para = document.querySelector("p")  //select p tag
+        para.textContent = "bye"
+    }
+</script>
+
+<!-- select p tag using id -->
+<!-- <script>
+    function change() {
+        var para = document.querySelector("#p1") 
+        para.textContent = "bye"
+    }
+</script> -->
+
+<!-- select p tag using class -->
+<!-- <script>
+    function change() {
+        var para = document.querySelector(".p1")  
+        para.textContent = "bye"
+    }
+</script> -->
