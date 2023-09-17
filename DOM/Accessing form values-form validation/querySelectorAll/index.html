@@ -1,0 +1,47 @@
+<h1>One</h1>
+<h1>Two</h1>
+<h1>Three</h1>
+<button onclick="click()">Click</button>
+
+<script>
+    function click() {
+        var h = document.querySelectorAll("h1")
+        console.log(h)
+    }
+</script>
+
+<!--  -->
+
+<h1>One</h1>
+<h1>Two</h1>
+<h1>Three</h1>
+<button onclick="change()">Click</button>
+
+<script>
+    function change() {
+        var h = document.querySelectorAll("h1")
+        console.log(h)
+
+        h.forEach (function(element){
+            console.log(element.innerHTML)
+            // console.log(element.textContent)
+        })
+    }
+</script> 
+
+
+<!--  -->
+
+<p>Hello</p>
+<p>Bye</p>
+<p>Tata</p>
+<button onclick="update()">Change</button>
+
+<script>
+    function update() {
+        var para = document.querySelectorAll("p")
+        para.forEach(element)({
+            console.log(element.textContent)
+        })
+    }
+</script>
