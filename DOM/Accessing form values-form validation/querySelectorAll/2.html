@@ -1,0 +1,34 @@
+<h1>ONE</h1>
+<h1>TWO</h1>
+<h1>THREE</h1>
+<button id="btn" onclick="change()">Change</button>
+
+<script>
+    function change() {
+        var h = document.querySelectorAll("h1")
+        console.log(h)
+
+        h.forEach(function(element){
+            console.log(element)
+            console.log(element.textContent)
+            console.log(element.innerHTML)
+        })
+    }
+</script>
+
+
+<p>Hi</p>
+<p>Bye</p>
+<p>How are you?</p>
+<button onclick="update()">Click</button>
+
+<script>
+    function update() {
+        var para = document.querySelectorAll("p")
+        console.log(para)
+
+        para.forEach(function(n){
+            console.log(n.textContent)
+        })
+    }
+</script>

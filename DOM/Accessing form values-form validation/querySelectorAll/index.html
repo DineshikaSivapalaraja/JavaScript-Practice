@@ -40,7 +40,7 @@
 <script>
     function update() {
         var para = document.querySelectorAll("p")
-        para.forEach(element)({
+        para.forEach(function(element){
             console.log(element.textContent)
         })
     }
