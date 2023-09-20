@@ -1,0 +1,33 @@
+<input type="checkbox" value="JavaScript" class="checkbox">JavaScript
+<input type="checkbox" value="Python" class="checkbox">Python
+<input type="checkbox" value="Java" class="checkbox">Java
+<input type="checkbox" value="C" class="checkbox">C
+
+<button onclick="show()">Click Me</button>
+<p id="para">Skills are: </p>
+
+<script>
+    function show() {
+        // selecting 1st checkbox
+
+        // var checkbox = document.querySelector(".checkbox")
+        // var para = document.getElementById("para")
+        // if(checkbox.checked == true){
+        //     para.textContent = "Skills are: "+ checkbox.value }
+
+
+        // select all checkbox if they clicked
+        var skills=""
+        var checkbox = document.querySelectorAll(".checkbox")
+        var para = document.getElementById("para")
+
+        checkbox.forEach(function(element){
+            if(element.checked == true){
+                skills+=element.value
+                para.textContent = "Your Skills are: "+ skills
+            }
+        })
+        
+
+    }
+</script>
