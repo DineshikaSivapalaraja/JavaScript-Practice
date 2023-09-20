@@ -21,9 +21,10 @@ body{
 .form-container {
     padding: 30px;
     color: white;
-    width: 80%;
+    width: 50%;
     background-color: #0E1320;
-    height: 40%;
+    height: 30%;
+    border-radius: 20px;
 }
 
 .input-field {
@@ -65,4 +66,15 @@ i {
 .field-submit:hover {
     background-color: #6BE9FB;
     color: #0E1320;
+}
+
+.popup {
+    position: absolute;
+    background-color: #6BE9FB;
+    padding: 10px;
+    /* top: 0px; */
+    top: -40px;
+    left: 40%;
+    opacity: 0;
+    transition: 2s;
 }
