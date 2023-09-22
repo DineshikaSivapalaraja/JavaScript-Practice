@@ -1,0 +1,65 @@
+<style>
+    .container{
+        display: flex;
+        /* overflow: hidden; *//* hide exclude container--> hide to scroll the full page */
+        overflow: scroll; /* to only scroll the container without scrolling page*/
+        gap: 20px;
+    }
+    /* to hide scroll bar */
+    .container::-webkit-scrollbar{
+        visibility: hidden;
+    }
+
+</style>
+
+<div class="container">
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <h1>Five</h1>
+    <h1>Six</h1>
+    <h1>Seven</h1>
+    <h1>Eight</h1>
+    <h1>Nine</h1>
+    <h1>Ten</h1>
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <h1>Five</h1>
+    <h1>Six</h1>
+    <h1>Seven</h1>
+    <h1>Eight</h1>
+    <h1>Nine</h1>
+    <h1>Ten</h1>
+</div>
+
+<button id="left">Left</button>
+<button id="right">Right</button>
+
+<script>
+    //selecting buttons and container
+    var leftBtn = document.getElementById("left")
+    var rightBtn = document.getElementById("right")
+
+    var container = document.querySelector(".container")
+
+    leftBtn.addEventListener("click",function(){
+        //to scroll left
+        container.scrollBy({
+            top:0,
+            left:200,
+            behavior: "smooth"
+        })
+    })
+
+    rightBtn.addEventListener("click",function(){
+        //to scroll right
+        container.scrollBy({
+            top:0,
+            left:-200,
+            behavior: "smooth"
+        })
+    })
+</script>

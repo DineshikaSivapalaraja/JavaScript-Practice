@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Progressbar</title>
+        <!-- <link rel="stylesheet" href="progress.css"> -->
+
+        <style>
+        .container {
+        
+            border: solid black 2px;
+            border-radius: 20px;
+            height: 20px;
+        }
+
+        #sub {
+            width:50%;
+            background-color: aqua;
+            height: inherit;
+            border-radius: inherit; /* assign parent container value */
+            transition: 2s;
+            
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="subcontainter" id="sub">
+    
+            </div>
+        </div>
+
+        <input id="inputProgress">
+        <button id="btn">Load</button>
+        <!-- <script src="progress.js"></script> -->
+        <script>
+            var input=document.getElementById("inputProgress")
+            var btn=document.getElementById("btn")
+            var subContainer=document.getElementById("sub")
+            
+            btn.addEventListener("click",function(){
+                subContainer.style.width=input.value+"%"
+            })
+        </script>
+    </body>
+</html>
