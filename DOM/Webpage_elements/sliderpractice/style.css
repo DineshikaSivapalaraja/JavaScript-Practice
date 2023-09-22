@@ -1,0 +1,36 @@
+.slider-container{
+    display: flex;
+    /* margin-left: 0; */
+    /* margin-left: -100px; */
+    transition: 2s;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.one{
+    background-color: blue;
+    height: 100px;
+    width: 100vw;/* viewpoint width */
+}
+
+.two{
+    background-color: green;
+    height: 100px;
+    width: 100vw;/* viewpoint width */
+}
+
+.three{
+    background-color: purple;
+    height: 100px;
+    width: 100vw;/* viewpoint width */
+}
+
+.four{
+    background-color: yellow;
+    height: 100px;
+    width: 100vw;/* viewpoint width */
+}
