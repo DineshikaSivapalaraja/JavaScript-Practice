@@ -1,0 +1,38 @@
+<input type="text" id="input">
+<div class="container">
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <h1>Five</h1>
+    <h1>Six</h1>
+    <h1>Seven</h1>
+</div>
+
+<script>
+    //selecting input tag
+    var input = document.getElementById("input")
+    //selecting All h1 element
+    var items = document.querySelectorAll("h1")
+
+    //on every keyup on input box call the below function
+    input.addEventListener("keyup",function(){
+        //get entered value from input box
+        var enteredValue = input.value.toUpperCase()
+
+        //iterate through every element in an array
+        items.forEach(function (ele) {
+            //get text from all h1 element
+            var itemText = ele.textContent.toUpperCase()
+            //compare h1 and entered value
+            if(itemText.indexOf(enteredValue) < 0) {
+                ele.style.display="none"
+            }
+            //to get reverse too
+            else {
+                ele.style.display="block"
+            }
+
+        })
+    })  
+</script>
